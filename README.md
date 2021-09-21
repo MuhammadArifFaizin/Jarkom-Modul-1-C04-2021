@@ -42,6 +42,20 @@ Dari gambar tersebut terlihat jika isi dari request body commandnya jika `userna
 
 Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf")
 
+Pada soal ini, diminta untuk mencari file PDF dengan nama file `Real.pdf` dalam sebuah file ZIP diantara 500 file ZIP.
+
+Untuk mencarinya, kita perlu menggunakan display filter `ftp-data contains "Real.pdf"` untuk menemukan data FTP yang memiliki konten berupa nama file PDF `"Real.pdf"` seperti gambar di bawah. 
+
+![Gambar No 7](/images/soal7.png)
+
+Kemudian pilih packet tersebut, lalu klik kanan, pilih `Follow`, pilih `TCP Stream`. Kemudian akan muncul jendela baru, ubah `Show data as` menjadi `Raw` seperti gambar di bawah. 
+
+![Gambar No 7 2](/images/soal7-2.png)
+
+Kemudian pilih `save as...` dan simpan sebagai `Real.pdf`. Setelah dibuka, isi dari file PDF tersebut seperti gambar berikut.
+
+![Gambar No 7 3](/images/soal7-3.png)
+
 ## No 8
 
 Cari paket yang menunjukan pengambilan file dari FTP tersebut!
