@@ -66,7 +66,36 @@ Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Sa
 
 ## No 10
 
-Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan `password` untuk membuka file rahasia yang ada di "secret.zip"!
+Selain itu terdapat `"history.txt"` yang kemungkinan berisi history bash server tersebut! Gunakan isi dari `"history.txt"` untuk menemukan `password` untuk membuka file rahasia yang ada di `"secret.zip"`!
+
+Pada soal ini, kita diminta mencari tahu isi dari file `history.txt` untuk membuka file yang ada di dalam file `secret.zip`, kemudian membuka file tersebut.
+
+Untuk itu, kita dapat mencari file `"history.txt"` dengan menggunakan display filter `ftp-data.command contains "history.txt"`. Kemudian kami menemukan sebuah packet seperti gambar berikut
+
+![Gambar No 10](/images/soal10.png)
+
+Untuk mengetahui isinya, kita harus mengikut `TCP Stream`nya, yaitu dengan cara klik kanan, kemudian pilih `Follow`, lalu pilih `TCP Stream`. Kemudian akan muncul jendela baru seperti gambar berikut 
+
+![Gambar No 10 2](/images/soal10-2.png)
+
+Dari gambar tersebut, diketahui jika terdapat file `bukanapapa.txt` yang menjadi key dari file.
+
+Oleh karena itu, kita harus mencari file `"bukanapaapa.txt"` dengan menggunakan display filter `ftp-data.command contains "bukanapaapa.txt"`. Kemudian kami menemukan sebuah packet seperti gambar berikut
+
+![Gambar No 10 3](/images/soal10-3.png)
+
+Lalu seperti sebelumnya, untuk mengetahui isinya, kita harus mengikut `TCP Stream`nya, yaitu dengan cara klik kanan, kemudian pilih `Follow`, lalu pilih `TCP Stream`. Kemudian akan muncul jendela baru seperti gambar berikut 
+
+![Gambar No 10 4](/images/soal10-4.png)
+
+Dari gambar tersebut, kita mendapatkan `password` untuk membuka file rahasia yang ada di file `"secret.zip"`.
+
+![Gambar No 10 5](/images/soal10-5.png)
+
+Setelah itu, file PDF berhasil dibuka dan hasilnya adalah seperti berikut
+
+![Gambar No 10 6](/images/soal10-6.png)
+
 
 ## No 11
 
