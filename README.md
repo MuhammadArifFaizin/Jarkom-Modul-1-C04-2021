@@ -18,7 +18,7 @@ Temukan paket dari web-web yang menggunakan basic authentication method!
 
 ## No 3
 
-Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
+Ikuti perintah di basic.ichimarumaru.tech! `Username` dan `password` bisa didapatkan dari file .pcapng!
 
 ## No 4
 
@@ -26,11 +26,11 @@ Temukan paket mysql yang mengandung perintah query select!
 
 ## No 5
 
-Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
+Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! `Username` dan `password` bisa didapat dari query insert pada table users dari file .pcap!
 
 ## No 6
 
-Cari username dan password ketika melakukan login ke FTP Server!
+Cari `username` dan `password` ketika melakukan login ke FTP Server!
 
 ## No 7
 
@@ -46,7 +46,7 @@ Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Sa
 
 ## No 10
 
-Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!
+Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan `password` untuk membuka file rahasia yang ada di "secret.zip"!
 
 ## No 11
 
