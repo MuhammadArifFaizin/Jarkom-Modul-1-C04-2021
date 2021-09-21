@@ -116,6 +116,18 @@ Untuk menggunakan display filter, filter yang digunakan adalah `tcp.srcport == 8
 
 Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 
+Dari soal tersebut, kita diminta untuk memfilter hasil tangkapan Wireshark hanya untuk packet yang mengandung port 21.
+
+### Capture Filter
+Untuk menggunakan capture filter, filter yang digunakan adalah `port 21`. Berikut tampilannya
+
+![Gambar No 12](/images/soal12.png)
+
+### Display Filter
+Untuk menggunakan display filter, filter yang digunakan adalah `tcp.port == 21 || udp.port == 21`
+
+![Gambar No 12 2](/images/soal12-2.png)
+
 ## No 13
 
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
