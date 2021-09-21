@@ -100,6 +100,18 @@ Setelah itu, file PDF berhasil dibuka dan hasilnya adalah seperti berikut
 
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 
+Dari soal tersebut, kita diminta untuk memfilter hasil tangkapan Wireshark hanya untuk packet yang berasal dari port 80.
+
+### Capture Filter
+Untuk menggunakan capture filter, filter yang digunakan adalah `src port 80`. Berikut tampilannya
+
+![Gambar No 11](/images/soal11.png)
+
+### Display Filter
+Untuk menggunakan display filter, filter yang digunakan adalah `tcp.srcport == 80 || udp.srcport == 80`
+
+![Gambar No 11 2](/images/soal11-2.png)
+
 ## No 12
 
 Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
