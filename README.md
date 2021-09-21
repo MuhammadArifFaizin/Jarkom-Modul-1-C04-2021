@@ -32,6 +32,12 @@ Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! `Username` dan `pa
 
 Cari `username` dan `password` ketika melakukan login ke FTP Server!
 
+Pada soal ini, diminta untuk mencari `username` dan `password` ketika melakukan login ke FTP server. Protokol FTP menggunakan command `USER` untuk mengirimkan `username`, dan command `PASS` untuk mengirimkan `password`. Sehingga kita dapat menggunakan display filter `ftp.request.command == USER || ftp.request.command == PASS` untuk menemukan request tersebut.
+
+![Gambar No 6](/images/soal6.png)
+
+Dari gambar tersebut terlihat jika isi dari request body commandnya jika `username`nya adalah `secretuser` dan `password`nya adalah `aku.pengen.pw.aja`.
+
 ## No 7
 
 Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf")
