@@ -152,6 +152,18 @@ Untuk menggunakan display filter, filter yang digunakan adalah `tcp.port == 21 |
 
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
 
+Dari soal tersebut, kita diminta untuk memfilter packet dengan port 443.
+
+### Capture Filter
+Filter yang digunakan untuk capture filter adalah `port 443`. dihasilkan :
+
+![Gambar No 13](/images/soal13.png)
+
+### Display Filter
+Filter yang digunakan untuk display filter adalah `tcp.dstport == 443 || udp.dstport == 443`
+
+![Gambar No 13 2](/images/soal13-2.png)
+
 ## No 14
 
 Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
