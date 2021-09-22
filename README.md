@@ -60,6 +60,10 @@ Kemudian pilih `save as...` dan simpan sebagai `Real.pdf`. Setelah dibuka, isi d
 
 Cari paket yang menunjukan pengambilan file dari FTP tersebut!
 
+Pada soal ini, kita diminta untuk menampilkan paket yang menunjukkan adanya pengambilan file / download dari FTP yang tersedia.
+
+Seperti yang kita tahu pada modul pertama, ada beberapa command pada paket seperti `SOTR` yang berarti upload / menaruh file dalam FTP, dan `RETR` yang berarti sebaliknya. Maka dari itu untuk menjawab soal ini, kita perlu menjalankan filter `ftp.request.command == "RETR"`, dengan hasil sebagai berikut 
+
 ## No 9
 
 Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
