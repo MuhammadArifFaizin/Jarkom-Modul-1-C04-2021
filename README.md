@@ -168,6 +168,28 @@ Filter yang digunakan untuk display filter adalah `tcp.dstport == 443 || udp.dst
 
 Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
 
+Dari soal tersebut, kita diminta untuk mengambil paket yang bertujuan ke `kemenag.go.id`.
+
+### Capture Filter
+Filter yang digunakan untuk capture filter adalah `dst host kemenag.go.id`. dihasilkan :
+
+![Gambar No 14](/images/soal14.png)
+
+### Display Filter
+Filter yang digunakan untuk display filter adalah `ip.host == kemenag.go.id`
+
+![Gambar No 14 2](/images/soal14-2.png)
+
 ## No 15
 
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+
+Dari soal tersebut, kita diminta untuk mengambil paket yang berasal dari IP komputer.
+
+Untuk itu, pertama kita mencari ip kita sendiri dengan membuka `CMD` dan mengetikkan `ipconfig` dan enter. Kita akan mengambil alamat ip pada baris yang bertuliskan `ipv4` dan didapatkan :
+
+![Gambar No 15](/images/soal15.png)
+
+Setelah itu, kita akan mencoba mencari pake menggunakan ip yang sudah dicari menggunakan `ip.src==192.168.1.101`
+
+![Gambar No 15 2](/images/soal15-2.png)
