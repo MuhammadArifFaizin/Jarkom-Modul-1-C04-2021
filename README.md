@@ -70,6 +70,20 @@ Seperti yang kita tahu pada modul pertama, ada beberapa command pada paket seper
 
 Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
 
+Pada soal ini, kita diminta untuk mencari file bernama `secret.zip` dan mendownloadnya.
+
+Untuk melakukannya, kita pertama harus mencari paket dimana file tersebut berada, dan untuk mempermudah pencarian, kita akan menggunakan filter `ftp-data.command contains "secret.zip"` dan didapat hasil sebagai berikut :
+
+![Gambar No 9](/images/soal9.png)
+
+Setelah menemukan paket yang berisi file `secret.zip` tersebut, untuk mendownloadnya kita lakukan klik kanan pada paket, lalu klik `follow`, lalu `TCP stream`. Setelah muncul windows baru kita ubah `show data as` menjadi `raw`. Lalu, klik `save as`
+
+![Gambar No 9 2](/images/soal9-2.png)
+
+Setelah itu kita melakukan `save as` dan menyimpannya dengan nama `secret.zip`. Ketika dibuka akan seperti ini :
+
+![Gambar No 9 3](/images/soal9-3.png)
+
 ## No 10
 
 Selain itu terdapat `"history.txt"` yang kemungkinan berisi history bash server tersebut! Gunakan isi dari `"history.txt"` untuk menemukan `password` untuk membuka file rahasia yang ada di `"secret.zip"`!
