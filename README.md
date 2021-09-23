@@ -233,3 +233,6 @@ Untuk itu, pertama kita mencari ip kita sendiri dengan membuka `CMD` dan mengeti
 Setelah itu, kita akan mencoba mencari pake menggunakan ip yang sudah dicari menggunakan `ip.src==192.168.1.101`
 
 ![Gambar No 15 2](/images/soal15-2.png)
+
+## Kenadala yang Dialami
+Kendala yang dialami adalah untuk nomor 14, dimana menggunakan capture filter `dst host kemenag.go.id` sempat tidak tertangkap sama sekali paketnya.
