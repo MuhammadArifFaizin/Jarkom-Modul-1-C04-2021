@@ -12,21 +12,61 @@ Anggota Kelompok :
 
 Sebutkan webserver yang digunakan pada "ichimarumaru.tech"!
 
+Pada soal ini diminta untuk mencari webserver yang digunakan oleh website "ichimarumaru.tech" menggunakan wireshark. Sehingga untuk mencari webserver dicari dulu paket yang berasal dari website tersebut. Cara mencarinya menggunakan display filter `http.host eq "ichimarumaru.tech"`. Jika difilter maka akan menunjukan hasil sebagai berikut
+![Gambar No 1](/images/soal1.png)
+Kemudian untuk mencari servernya caranya klik kanan kemudian follow -> http stream. Kemudian akan mendapat dialog box seperti berikut
+![Gambar No 1-2](/images/soal1-2.jpg)
+Bisa dilihat dari gambar tersebut server yang digunakan oleh web tersebut adalah nginx/1.18.0 (Ubuntu)
+
 ## No 2
 
 Temukan paket dari web-web yang menggunakan basic authentication method!
+
+Pada soal ini diminta untuk mencari paket dari web yang menggunakan authentication basic. Maka dari itu untuk mencari paket tersebut digunakan display filter `http.authbasic`. Hasilnya akan terlihat sebagai berikut.
+![Gambar No 2](/images/soal2.png)
 
 ## No 3
 
 Ikuti perintah di basic.ichimarumaru.tech! `Username` dan `password` bisa didapatkan dari file .pcapng!
 
+Pada soal nomor 3 diminta untuk login ke website basic.ichimarumaru.tech, kemudian untuk mencari `Username` dan `password` bisa didapatkan dari file .pcapng nya. Untuk mencari username dan password tersebut maka digunakan display filter `http.authbasic` untuk mencari paket yang memiliki authenticator, tetapi bisa juga ditambahkan display filter `http.host eq "basic.ichimarumaru.tech"` untuk menambah filter paket yang berasal dari website tersebut. Menggunakan yang manapun memberikan hasil filter sebagai berikut.
+![Gambar No 3](/images/soal3.png)
+Dari hasil tersebtu bisa dilihat authorization terdapat credentials yang berisi username dan password. Didapat credentialsnya sebagai berikut `kuncimenujulautan:tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN`. Sehingga untuk `Username`nya adalah `kuncimenujulautan` dan `password` adalah `tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN`. Setelah login akan mendapatkan halaman web sebagai berikut, dan diminta untuk menyebutkan urutan kabel T568A
+![Gambar No 3-2](/images/soal3-2.png)
+Untuk urutan kabel T568A adalah
+1. Hijau - Putih
+2. Hijau
+3. Orange - Putih
+4. Biru
+5. Biru - Putih
+6. Orange
+7. Cokelat - Putih
+8. Cokelat
+
 ## No 4
 
 Temukan paket mysql yang mengandung perintah query select!
 
+Pada soal ini diminta untuk mencari paket mysql yang mengandung perintah query select. Hal tersebut bisa didapatkan dari display filter `mysql.query contains "select"`. Jika dijalankan maka akan terlihat seperti berikut
+![Gambar No 4](/images/soal4.png)
+
 ## No 5
 
 Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! `Username` dan `password` bisa didapat dari query insert pada table users dari file .pcap!
+
+Pada soal ini diminta untuk login ke portal.ichimarumaru.tech dan untuk mendapatkan username dan password bisa didapat dari paket mysql yang mengandung insert. Untuk mencari username dan password maka menggunakan display filter `mysql.query contains "INSERT"`. Maka akan didapatkan sebagai berikut
+![Gambar No 5](/images/soal5.png)
+Kemudian setelah mendapatkan username dan password dimana username adalah `akakanomi` dan passwordnya `pemisah4lautan` akan mendapat page website sebagai berikut, dan diminta untuk menuliskan urutan kabel T568B
+![Gambar No 5-2](/images/soal5-2.png)
+Untuk urutan kabel T568B adalah sebagai berikut.
+1. Orange - Putih
+2. Orange
+3. Hijau - Putih
+4. Biru
+5. Biru - Putih
+6. Hijau
+7. Cokelat - Putih
+8. Cokelat
 
 ## No 6
 
