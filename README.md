@@ -16,6 +16,7 @@ Pada soal ini diminta untuk mencari webserver yang digunakan oleh website "ichim
 ![Gambar No 1](/images/soal1.png)
 Kemudian untuk mencari servernya caranya klik kanan kemudian follow -> http stream. Kemudian akan mendapat dialog box seperti berikut
 ![Gambar No 1-2](/images/soal1-2.jpg)
+
 Bisa dilihat dari gambar tersebut server yang digunakan oleh web tersebut adalah nginx/1.18.0 (Ubuntu)
 
 ## No 2
@@ -33,6 +34,7 @@ Pada soal nomor 3 diminta untuk login ke website basic.ichimarumaru.tech, kemudi
 ![Gambar No 3](/images/soal3.png)
 Dari hasil tersebtu bisa dilihat authorization terdapat credentials yang berisi username dan password. Didapat credentialsnya sebagai berikut `kuncimenujulautan:tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN`. Sehingga untuk `Username`nya adalah `kuncimenujulautan` dan `password` adalah `tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN`. Setelah login akan mendapatkan halaman web sebagai berikut, dan diminta untuk menyebutkan urutan kabel T568A
 ![Gambar No 3-2](/images/soal3-2.png)
+
 Untuk urutan kabel T568A adalah
 1. Hijau - Putih
 2. Hijau
@@ -56,8 +58,10 @@ Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! `Username` dan `pa
 
 Pada soal ini diminta untuk login ke portal.ichimarumaru.tech dan untuk mendapatkan username dan password bisa didapat dari paket mysql yang mengandung insert. Untuk mencari username dan password maka menggunakan display filter `mysql.query contains "INSERT"`. Maka akan didapatkan sebagai berikut
 ![Gambar No 5](/images/soal5.png)
+
 Kemudian setelah mendapatkan username dan password dimana username adalah `akakanomi` dan passwordnya `pemisah4lautan` akan mendapat page website sebagai berikut, dan diminta untuk menuliskan urutan kabel T568B
 ![Gambar No 5-2](/images/soal5-2.png)
+
 Untuk urutan kabel T568B adalah sebagai berikut.
 1. Orange - Putih
 2. Orange
