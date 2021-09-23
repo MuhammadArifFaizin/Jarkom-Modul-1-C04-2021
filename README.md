@@ -219,10 +219,6 @@ Filter yang digunakan untuk capture filter adalah `dst host kemenag.go.id`. diha
 
 ![Gambar No 14](/images/soal14.png)
 
-### Display Filter
-Filter yang digunakan untuk display filter adalah `ip.host == kemenag.go.id`
-
-![Gambar No 14 2](/images/soal14-2.png)
 
 ## No 15
 
